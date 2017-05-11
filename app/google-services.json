@@ -1,0 +1,86 @@
+{
+  "project_info": {
+    "project_number": "59426988537",
+    "firebase_url": "https://car-maintenance-service.firebaseio.com",
+    "project_id": "car-maintenance-service",
+    "storage_bucket": "car-maintenance-service.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:59426988537:android:f4794765c6e84224",
+        "android_client_info": {
+          "package_name": "com.example.bakev.carmaintenanceservice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "59426988537-ogadu8ammmfjfqt4k3ii6q3j9g68mf84.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBO9eXNCLtm-oa9DEuzxVRBXtOwqLvKL0o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:59426988537:android:5829d9b5036d4e4b",
+        "android_client_info": {
+          "package_name": "com.example.bakev.carservice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "59426988537-qaklosbrn7fpff5fclnvghuibs28duum.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bakev.carservice",
+            "certificate_hash": "9086606699a9d003324963cc15ee59f00b0923c0"
+          }
+        },
+        {
+          "client_id": "59426988537-ogadu8ammmfjfqt4k3ii6q3j9g68mf84.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBO9eXNCLtm-oa9DEuzxVRBXtOwqLvKL0o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "59426988537-ogadu8ammmfjfqt4k3ii6q3j9g68mf84.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
