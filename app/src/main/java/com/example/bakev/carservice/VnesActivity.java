@@ -17,6 +17,7 @@ import android.support.v4.app.NotificationCompat;
 import android.util.Log;
 import android.view.Display;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.DatePicker;
@@ -72,6 +73,7 @@ public class VnesActivity extends AppCompatActivity {
                 if (izv.Model.length() == 0 || izv.Marka.length() == 0 || izv.TipServis.length() == 0 || izv.KilometriNaAvtomobil.length() == 0) {
                     CharSequence text = "Пополни ги сите полиња";
                     Toast.makeText(getApplicationContext(), text, Toast.LENGTH_SHORT).show();
+
                 } else {
                     FirebaseDatabase database = FirebaseDatabase.getInstance();
                     DatabaseReference myRef = database.getReference("Izvestaj");
@@ -88,15 +90,31 @@ public class VnesActivity extends AppCompatActivity {
                     }
                     CharSequence text = "Успешно го  внесевте сервисот ";
                     Toast.makeText(getApplicationContext(), text, Toast.LENGTH_SHORT).show();
+                    if(MarkaText.requestFocus()) {
+                        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_VISIBLE);
+
+
+                    }
+                    MarkaText.setText("");
+                    ModelText.setText("");
+                    ServisText.setText("");
+                    KilometriText.setText("");
+                    Servis6.setChecked(false);
+                    Servis12.setChecked(false);
+
                 }
 
+
             }
-        });
+        }
+        );
+
+
     }
 
     private Notification getNotification(String content) {
         Notification.Builder builder = new Notification.Builder(this);
-        builder.setContentTitle("Servis");
+        builder.setContentTitle("Проверите си го вашето  возило ");
         builder.setContentText(content);
         Uri alarmSound = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
         builder.setSound(alarmSound);
